@@ -17,7 +17,7 @@ export interface AccordionListProps extends Omit<FlatListProps<any>, 'data' | 'r
      * An optional Function that returns a React element to display as Accordion icon
      * default icon keyboard-arrow-left
      */
-    customIcon?: () => JSX.Element;
+    customIcon?: (isOpen:boolean) => JSX.Element;
     /**
      * An optional param to add custom container item style
      */

@@ -47,7 +47,7 @@ const AccordionItem = ({
             {!customIcon ? (
               <MaterialIcons name={isRTL ? 'keyboard-arrow-left' : 'keyboard-arrow-right'} size={30} />
             ) : (
-              customIcon()
+              customIcon(isOpen)
             )}
           </Animated.View>
           {isRTL && !I18nManager.isRTL && customTitle()}
